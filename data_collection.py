@@ -26,7 +26,7 @@ for j in range(number_of_classes):
             print("Error: Failed to capture frame.")
             break
 
-        cv2.putText(frame, 'Ready? Press "q" to start ', (50, 50), 
+        cv2.putText(frame, 'Press "q" to start ', (50, 50), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
